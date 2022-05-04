@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import User from './components/User';
-
+import{ useState, useEffect } from 'react';
+import Color from './components/Color';
 
 function App() {
+
+    const [showColor, setShowColor] = useState(true)
 
 
   return (
     <div className="App">
-      <User/>
+
+      <button onClick={() => setShowColor(!showColor)}>Mostrar/Oultar color</button>
+      {
+        showColor ? <Color/> : null
+      }
+
     </div>
   );
 }

@@ -42,3 +42,8 @@
   border-radius: 6px;
   border: none;
 }
+
+.color{
+  width: 100%;
+  background-color: yellow;
+}
